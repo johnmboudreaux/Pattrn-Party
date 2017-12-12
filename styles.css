@@ -44,14 +44,15 @@ header h1 span {
   width: 74vw;
 }
 
-.tabs-conatiner-container {
-  width: 100%;
+.tabs-conatiner {
+  width: 100vw;
   display: inline-block;
 }
 
 .tabs {
-  margin: 0 0 0 112px;
+  margin: auto;
   padding: 0;
+  width: 80vw;
 }
 
 .tabs:after {
@@ -61,21 +62,26 @@ header h1 span {
 }
 
 .tabs li {
-  margin: 0px 5px;
   float: left;
   list-style: none;
-  /*width: 100px;*/
+}
+.tabs ul {
+  position: relative;
+  right: 40px;
+  top: 1px;
 }
 
 .tabs a {
-  padding: 15px 98px;
+  padding: 15px 50px;
   display: inline-block;
-  border: 1px solid;
+  border-top: 1px solid #D1D2D3;
+  border-right: 1px solid #D1D2D3;
+  border-left: 1px solid #D1D2D3;
   border-radius: 3px 3px 0px 0px;
-  background: #7FB5DA;
+  background: #F2F2F2;
   font-size: 16px;
   font-weight: 600;
-  color: #4c4c4c;
+  color: #666666;
   transition: all linear 0.15s;
 }
 
@@ -86,7 +92,7 @@ header h1 span {
 
 li.active a, li.active a:hover {
   background: #fff;
-  color: #4c4c4c;
+  color: #666666;
 }
 
 .tab-img {
@@ -95,16 +101,18 @@ li.active a, li.active a:hover {
 
 .tab-content {
   padding: 15px;
-  border: 1px solid;
+  border-right: 1px solid #D1D2D3;
+  border-bottom: 1px solid #D1D2D3;
+  border-left: 1px solid #D1D2D3;
   border-radius: 3px;
-  box-shadow: -1px 1px 1px rgba(0,0,0,0.15);
   margin: auto;
   width: 80vw;
 }
 
 .content {
   float: right;
-  margin-right: 70px;
+  font-size: .85em;
+  margin-right: 75px;
   width: 60%;
 }
 
@@ -114,4 +122,43 @@ li.active a, li.active a:hover {
 
 .tab.active {
   display: block;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .content {
+    float: none;
+    width: 80%;
+    margin: auto;
+  }
+
+  .content > p {
+    text-align: left;
+  }
+
+  .content hr {
+    margin-bottom: 45px;
+  }
+
+  .tab-img {
+    width: 66%;
+    /*margin: auto;*/
+  }
+
+  #tab1 img {
+    transform: rotate(90deg);
+  }
+
+  .tab-title {
+    font-size: 2.5em;
+    margin: 45px 0 0 0;
+  }
+
+  .tab {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
 }
