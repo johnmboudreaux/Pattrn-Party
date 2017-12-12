@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <title>Pattrn Party</title>
 </head>
@@ -12,81 +13,50 @@
 
   <header>
     <h1>PATTRN <span class="h1-span">PARTY</span></h1>
-    <hr class="header-hr">
     <p class="student-name">John Michael</p>
   </header>
 
   <main class="main-container">
-      <!-- Accordion (acc)-->
-        <div class="section-header">
-          <h2 class="section-h2">ACCORDION TABS</h2>
-          <hr>
+    <div class="accordion-header">
+      <h2 class="accordion-header-title">ACCORDION tabs-conatiner</h2>
+      <div class="div-hr">
+        <hr>
+      </div>
+    </div>
+
+    <div class="tabs-conatiner">
+        <ul class="tabs">
+            <li class="active"><a href="#tab1">Tab 1</a></li>
+            <li><a href="#tab2">Tab 2</a></li>
+            <li><a href="#tab3">Tab 3</a></li>
+            <li><a href="#tab4">Tab 4</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="tab1" class="tab active">
+                <p>Tab 1 content goes here!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi illo distinctio architecto nemo vitae recusandae deleniti, quis soluta aut rerum, hic voluptas iure tempora natus, fuga. Tempore debitis itaque ut?</p>
+            </div>
+
+            <div id="tab2" class="tab">
+                <p>Tab 2 content goes here!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo veritatis sapiente, illum dolorum dolor aliquam, voluptate reprehenderit aut, modi tempora optio non molestiae amet. Quae, corporis! Deserunt, explicabo, magnam.</p>
+            </div>
+
+            <div id="tab3" class="tab">
+                <p>Tab 3 content goes here!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos corrupti distinctio illum deserunt laboriosam officiis saepe iure ducimus voluptatem, nisi, suscipit natus tenetur facere enim dolorum. Quam dolorum, in officiis.</p>
+            </div>
+
+            <div id="tab4" class="tab">
+                <p>Tab 4 content goes here!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum velit ipsam veniam suscipit tenetur natus vitae iste voluptate corporis delectus, consectetur unde perspiciatis, dolorem commodi nobis reprehenderit molestias eius placeat!</p>
+            </div>
         </div>
-
-        <section class="section-container">
-            <div class="tab tab-active">
-              <p>Tab 1</p>
-              <i class="" id="tab-btn" aria-hidden="true"></i>
-            </div>
-            <article class="acc-content acc-content-active tab1">
-              <div class="placeholder"></div>
-              <div class="acc-text">
-                <h3 class="acc-text-h3">Lorem ipsum dolor sit amet, consectetue</h3>
-                <hr>
-                <p>text will go here</p>
-                <p>text will go here</p>
-              </div>
-            </article>
-
-            <div class="tab">
-              <p>Tab 2</p>
-              <i class="" id="tab-btn" aria-hidden="true"></i>
-            </div>
-            <article class="acc-content tab2">
-              <div class="placeholder"></div>
-              <div class="acc-text">
-                <h3 class="acc-text-h3">Lorem ipsum dolor sit amet2, consectetue</h3>
-                <hr>
-                <p>text will go here</p>
-                <p>text will go here</p>
-              </div>
-            </article>
-
-            <div class="tab">
-              <p>Tab 3</p>
-              <i class="" id="tab-btn" aria-hidden="true"></i>
-            </div>
-            <article class="acc-content tab3">
-              <div class="placeholder"></div>
-              <div class="acc-text">
-                <h3 class="acc-text-h3">Lorem ipsum dolor sit amet3, consectetue</h3>
-                <hr>
-                <p>text will go here</p>
-                <p>text will go here</p>
-              </div>
-            </article>
-
-            <div class="tab">
-              <p>Tab 4</p>
-              <i class="" id="tab-btn" aria-hidden="true"></i>
-            </div>
-            <article class="acc-content tab4">
-              <div class="placeholder"></div>
-              <div class="acc-text">
-                <h3 class="acc-text-h3">Lorem ipsum dolor sit amet4, consectetue</h3>
-                <hr>
-                <p>text will go here</p>
-                <p>text will go here</p>
-              </div>
-            </article>
-
-      </section>
-
-            <a class="code-btn" href="https://github.com/johnmboudreaux/pattrn-party" target="_blank">VIEW CODE</a>
+    </div>
   </main>
 
-  <script src="https://use.fontawesome.com/71dc415965.js"></script>
   <script src="jquery.js" charset="utf-8"></script>
-  <script src="accordion.js" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts.js" charset="utf-8"></script>
 </body>
 </html>

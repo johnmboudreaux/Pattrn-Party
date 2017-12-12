@@ -3,20 +3,100 @@
   box-sizing: border-box;
 }
 
-main {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 65px 70px;
+.main-container {
+  /*display: flex;*/
+  /*align-items: start;*/
+  /*flex-direction: row;*/
 }
 
-.code-btn {
-  margin-bottom: 100px;
-  padding: 20px;
-  width: 30%;
+header {
   background-color: #2F2235;
   color: #F2F2F2;
-  font-size: 2.3vw;
-  text-align: center;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 30px 60px;
+}
+
+header h1 {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+header h1 span {
+  color: #34D1D1;
+}
+
+.student-name {
+  font-weight: 600;
+}
+
+.accordion-header {
+  display: flex;
+  padding-left: 62px;
+}
+
+.accordion-header-title {
+  font-size: 15px;
+}
+
+.div-hr {
+  margin: 13px 35px;
+  width: 74vw;
+}
+
+.tabs-conatiner-container {
+  width:100%;
+  display:inline-block;
+}
+
+.tabs:after {
+  display:block;
+  clear:both;
+  content:'';
+}
+
+.tabs li {
+  margin:0px 5px;
+  float:left;
+  list-style:none;
   text-decoration: none;
+}
+
+.tabs a {
+  padding:9px 15px;
+  display:inline-block;
+  border-radius:3px 3px 0px 0px;
+  background:#7FB5DA;
+  font-size:16px;
+  font-weight:600;
+  color:#4c4c4c;
+  transition:all linear 0.15s;
+}
+
+.tabs a:hover {
+  background:#a7cce5;
+  text-decoration:none;
+}
+
+li.active a, li.active a:hover {
+  background:#fff;
+  color:#4c4c4c;
+}
+
+.tab-content {
+  padding:15px;
+  border-radius:3px;
+  box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+  background:#fff;
+}
+
+.tab {
+  display:none;
+}
+
+.tab.active {
+  display:block;
 }
