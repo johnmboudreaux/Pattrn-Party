@@ -105,6 +105,12 @@ li.active a, li.active a:hover {
   width: 80vw;
 }
 
+.content {
+  float: right;
+  margin-right: 70px;
+  width: 60%;
+}
+
 .tab {
   display: none;
 }
