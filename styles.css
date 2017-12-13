@@ -42,6 +42,11 @@ header h1 span {
   width: 74vw;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .tabs-conatiner {
   width: 100vw;
   display: inline-block;
@@ -102,7 +107,7 @@ li.active a, li.active a:hover {
   border-bottom: 1px solid #D1D2D3;
   border-left: 1px solid #D1D2D3;
   border-radius: 3px;
-  margin: auto;
+  margin: 0 auto 20px auto;
   width: 70vw;
 }
 
@@ -121,6 +126,14 @@ li.active a, li.active a:hover {
   display: block;
 }
 
+.view-code-button {
+  background-color: #3F3244;
+  color: #F2F2F2;
+  font-weight: 300;
+  margin: auto;
+  height: 40px;
+  width: 20%;
+}
 
 @media screen and (max-width: 1140px) {
   .content {
