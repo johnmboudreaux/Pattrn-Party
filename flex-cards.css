@@ -35,6 +35,14 @@
   height: 20vh;
 }
 
+.flex-cards:nth-of-type(1) {
+  grid-column: span 2;
+}
+
+.flex-cards:nth-last-of-type(1) {
+  grid-column: span 2;
+}
+
 .view-code-button {
   background-color: #3F3244;
   color: #F2F2F2;
@@ -42,4 +50,24 @@
   margin: 0 auto 75px;
   height: 40px;
   width: 20%;
+}
+
+@media screen and (max-width: 775px) {
+  .flex-cards-container {
+    align-items: center;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .flex-cards {
+    margin-right: 0;
+    width: 90%;
+  }
+
+  .flex-cards-header{
+    max-width: none;
+    font-size: .85em;
+  }
 }
