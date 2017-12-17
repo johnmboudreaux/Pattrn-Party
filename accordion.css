@@ -3,6 +3,14 @@
   box-sizing: border-box;
 }
 
+/*html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}*/
+
 header {
   background-color: #2F2235;
   color: #F2F2F2;
@@ -47,7 +55,7 @@ header h1 span {
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0 auto 50px auto;
-  width: 90vw;
+  width: 100vw;
 }
 
 .tabs-conatiner {
@@ -57,7 +65,7 @@ header h1 span {
 }
 
 .tabs {
-  margin: auto;
+  margin: 0 auto 0 auto;
   padding: 0;
   width: 70vw;
 }
