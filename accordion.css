@@ -42,14 +42,18 @@ header h1 span {
   width: 74vw;
 }
 
-.main-container {
+.section-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto 50px auto;
+  width: 90vw;
 }
 
 .tabs-conatiner {
-  width: 100vw;
   display: inline-block;
+  margin-bottom: 40px;
+  width: 100vw;
 }
 
 .tabs {
@@ -130,7 +134,7 @@ li.active a, li.active a:hover {
   background-color: #3F3244;
   color: #F2F2F2;
   font-weight: 300;
-  margin: auto;
+  margin: 0 auto 75px;
   height: 40px;
   width: 20%;
 }
