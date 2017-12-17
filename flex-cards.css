@@ -1,3 +1,20 @@
+.flex-cards-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 50px;
+}
+
+.flex-cards-section-header {
+  display: flex;
+  margin-bottom: 50px;
+  padding-left: 62px;
+}
+
+.flex-cards-section-title {
+  font-size: 1em;
+}
+
 .view-code-button {
   background-color: #3F3244;
   color: #F2F2F2;
