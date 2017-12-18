@@ -54,9 +54,15 @@
   background-color: #3F3244;
   color: #F2F2F2;
   font-weight: lighter;
-  height: 40px;
-  width: 20%;
   margin: 0 auto 75px;
+  padding-top: 4px;
+  height: 40px;
+  width: 35%;
+}
+
+.view-code-button:hover {
+  border: 1px solid #F2F2F2;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 775px) {
@@ -70,11 +76,17 @@
 
   .flex-cards {
     margin-right: 0;
-    width: 90%;
+    width: 70vw;
   }
 
   .flex-cards-header{
     max-width: none;
     font-size: .85em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .view-code-button {
+    width: 70vw;
   }
 }
