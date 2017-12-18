@@ -3,14 +3,6 @@
   box-sizing: border-box;
 }
 
-/*html,body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
-}*/
-
 header {
   background-color: #2F2235;
   color: #F2F2F2;
@@ -41,7 +33,8 @@ header h1 span {
   padding-left: 62px;
 }
 
-.accordion-header-title {
+.accordion-section-title {
+  font-weight: lighter;
   font-size: 1em;
 }
 
