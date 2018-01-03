@@ -19,6 +19,7 @@
   justify-content: center;
 }
 
+
 .header-bar-container {
   background-color: #D1D2D3;
   display: flex;
@@ -48,6 +49,10 @@
 
 .header-button-container {
   display: none;
+}
+
+.header-button:focus {
+  outline: none;
 }
 
 .nav-links {
@@ -90,12 +95,16 @@
   display: none;
 }
 
+.small-search {
+  display: none
+}
+
 nav a {
   color: #666666;
   font-size: 1.2em;
   font-weight: lighter;
   text-decoration: none;
-  margin: 20px;
+  margin: 20px 20px 20px 40px;
 }
 
 @media screen and (max-width: 725px) {
@@ -135,10 +144,22 @@ nav a {
     margin: 0 auto 60px auto;
   }
 
+  .small-search {
+    display: block;
+    margin: auto auto auto 20px;
+    width: 90%;
+  }
+
+  .small-search input {
+    width: 100%;
+  }
+
   .small-nav nav {
+    background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
     margin: 0 auto 60px auto;
+    width: 80vw;
   }
 
 }
