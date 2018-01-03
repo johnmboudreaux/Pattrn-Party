@@ -7,6 +7,9 @@ function tabSwitch(e) {
   $(this).parent('li').addClass('active').siblings().removeClass('active');
 }
 
-function toggleNav(event) {
-  
-}
+function toggleNav() {
+    $('.small-nav').hasClass('hidden') ?
+      $('.small-nav').toggleClass("show-small-nav")
+      :
+      $('.small-nav').toggleClass("show-small-nav");
+  };
